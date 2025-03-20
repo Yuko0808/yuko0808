@@ -3,6 +3,13 @@
   inputs:
     AppSecTestService: 'Yuko Azure Plugin Test'
     applications: '3caa69a7-2e04-4949-ad83-6f6cd940d2da'
+    scanname: 'Test'
+    scantype: 'static'
+    scanMethod: 'IRX'
+- task: HCLAppScanOnCloud@2
+  inputs:
+    AppSecTestService: 'Yuko Azure Plugin Test'
+    applications: '3caa69a7-2e04-4949-ad83-6f6cd940d2da'
     scantype: 'static'
     scanMethod: 'IRXless'
     includeSCAFile: true
